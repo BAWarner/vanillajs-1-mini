@@ -6,19 +6,20 @@
     <title>Counter - Theme Changer</title>
     <link rel="stylesheet" href="./index.css" />
     <link rel="stylesheet" href="./themes.css" />
+    <script src="./index.js" defer></script>
   </head>
   <body>
     <header>
       <p>Choose a theme:</p>
 
-      <button>Facebook</button> <button>DevMountain</button>
-      <button>Twitter</button> <button>Default</button>
+      <button onclick="selectTheme(this);">Facebook</button> <button onclick="selectTheme(this);">DevMountain</button>
+      <button onclick="selectTheme(this);">Twitter</button> <button  onclick="selectTheme(this);">Default</button>
     </header>
     <main>
-      <h1>0</h1>
+      <h1 id="counter">0</h1>
       <h2>Clicks</h2>
       <section>
-        <button>-</button> <button>Reset</button> <button>+</button>
+        <button onclick="decrease();">-</button> <button onclick="reset();">Reset</button> <button onclick="increase();">+</button>
       </section>
     </main>
   </body>
